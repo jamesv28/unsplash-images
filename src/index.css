@@ -65,6 +65,7 @@ html {
   --textColor:var(--grey-900);
   --dark-mode-bg-color: #333;
   --dark-mode-text-color: #fff;
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 .dark-theme {
   --textColor: var(--dark-mode-text-color);
@@ -74,6 +75,7 @@ html {
 body {
   background-color: var(--backgroundColor);
   color: var(--textColor);
+  transition: var(--darkModeTransition);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;

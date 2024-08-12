@@ -82,6 +82,12 @@ body {
   line-height: 1;
 }
 
+@media (prefer-color-scheme: dark) {
+  :root {
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  }
+}
 p {
   margin: 0;
 }
